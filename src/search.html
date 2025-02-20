@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search</title>
+  <link rel="stylesheet" href="./styles/output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav class="bg-white  w-full w-h-[80px]">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div class="flex justify-between h-20">
+                  <!-- logo -->
+                  <div class="flex items-center w-[24]">
+                      <a href="#" class="flex items-center">
+                          <span class="text-xl font-bold">LOVE</span>
+                          <span class="text-xl font-bold text-emerald-500">TRAVEL</span>
+                          <span class="text-xs text-gray-500 ml-1">TRAVEL AGENCY</span>
+                      </a>
+                      <!-- <img src="./images/logo.png" alt=""> -->
+                  </div>
+                  <!-- nav -->
+                  <div class="hidden md:flex items-center space-x-8">
+                      <a href="./index.html" class="text-gray-500 hover:text-indigo-600">Home</a>
+                      <a href="#" class="text-gray-500 hover:text-indigo-600">Travel</a>
+                      <a href="#" class="text-gray-500 hover:text-indigo-600">Pages</a>
+                      <a href="#" class="text-gray-500 hover:text-indigo-600">Shop</a>
+                      <a href="#" class="text-gray-500 hover:text-indigo-600">Blog</a>
+                      <a href="#" class="text-gray-500 hover:text-indigo-600">Contact Us</a>
+                  </div>
+                  <div class="flex items-center space-x-4">
+                      <!-- hamberger -->
+                      <button type="button" class=" p-2 rounded-md text-gray-400 hover:text-indigo-600">
+                          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                          </svg>
+                      </button>                  
+                      <!-- search -->
+                      <a href="./search.html" class="hidden md:flex px-6 py-2.5 bg-[#5D5FEF] hover:bg-indigo-600 text-white rounded">
+                          Search
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <!-- mobile screen -->
+          <div class="hidden md:hidden">
+              <div class="px-2 pt-2 pb-3 space-y-1">
+                  <a href="#" class="block px-3 py-2 text-[#5D5FEF] hover:text-gray-500">Home</a>
+                  <a href="#" class="block px-3 py-2 text-[#5D5FEF] hover:text-gray-500">Travel</a>
+                  <a href="#" class="block px-3 py-2 text-[#5D5FEF] hover:text-gray-500">Pages</a>
+                  <a href="#" class="block px-3 py-2 text-[#5D5FEF] hover:text-gray-500">Shop</a>
+                  <a href="#" class="block px-3 py-2 text-[#5D5FEF] hover:text-gray-500">Blog</a>
+                  <a href="#" class="block px-3 py-2 text-[#5D5FEF] hover:text-gray-500">Contact Us</a>
+              </div>
+          </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="relative h-[60vh] min-h-[400px] w-full overflow-hidden mb-10">
+            <img 
+                src="./images/image5.jpg"
+                alt="Coastal cliff formation with turquoise waters"
+                class="absolute inset-0 w-full h-full object-cover"
+            >
+            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+            <div class="relative z-10 flex h-full flex-col items-center justify-center px-4">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white text-center">
+                    Our Packages
+                </h1>
+            </div>
+            <div class="absolute bottom-6 right-6 z-20 flex gap-2">
+                <button class="h-8 w-8 flex items-center justify-center rounded-sm bg-white/10 text-white backdrop-blur-sm transition hover:bg-white/20 hover:text-blue-500">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <rect width="18" height="18" x="3" y="3" rx="2" />
+                    </svg>
+                </button>
+                <button class="h-8 w-8 flex items-center justify-center rounded-sm bg-white/10 text-white backdrop-blur-sm transition hover:bg-white/20 hover:text-blue-500">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <line x1="4" x2="20" y1="12" y2="12" />
+                        <line x1="4" x2="20" y1="6" y2="6" />
+                        <line x1="4" x2="20" y1="18" y2="18" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="container relative  mx-auto px-8 py5 left-[195px]">
+            <div class="flex flex-col lg:flex-row gap-20">
+                <div class="lg:w-1/4">
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="font-bold mb-2">Select your destination:</h3>
+                            <input type="text" placeholder="All Destinations" class="w-full px-3 py-2 border-solid rounded-md bg-gray-300">
+                        </div>
+                        <div>
+                            <h3 class="font-bold mb-2">Select your date:</h3>
+                            <input type="datetime" class="w-full px-3 py-2 border-solid rounded-md bg-gray-300">
+                        </div>
+                        <div>
+                            <h3 class="font-bold mb-2">Typologies:</h3>
+                            <div class="grid grid-cols-2 gap-2">
+                                <label class="flex items-center space-x-2">
+                                    <input type="checkbox" class="rounded">
+                                    <span>Sports Activities</span>
+                                </label>
+                                <label class="flex items-center space-x-2">
+                                    <input type="checkbox" class="rounded">
+                                    <span>Family Friendly</span>
+                                </label>
+                                <label class="flex items-center space-x-2">
+                                    <input type="checkbox" class="rounded">
+                                    <span>Heritage Tours</span>
+                                </label>
+                                <label class="flex items-center space-x-2">
+                                    <input type="checkbox" class="rounded">
+                                    <span>Road Trip</span>
+                                </label>
+                                <label class="flex items-center space-x-2">
+                                    <input type="checkbox" class="rounded">
+                                    <span>Budget Holiday</span>
+                                </label>
+                                <label class="flex items-center space-x-2">
+                                    <input type="checkbox" class="rounded">
+                                    <span>Culinary System</span>
+                                </label>
+                                <label class="flex items-center space-x-2">
+                                    <input type="checkbox" class="rounded">
+                                    <span>Eco-tourism</span>
+                                </label>
+                                <label class="flex items-center space-x-2">
+                                    <input type="checkbox" class="rounded">
+                                    <span>Adventure Travel</span>
+                                </label>
+                                <label class="flex items-center space-x-2">
+                                    <input type="checkbox" class="rounded">
+                                    <span>Beach Holidays</span>
+                                </label>
+                                <label class="flex items-center space-x-2">
+                                    <input type="checkbox" class="rounded">
+                                    <span>Cultural Tours</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-bold mb-2">Max Price:</h3>
+                            <input type="range" min="0" max="5000" value="2500" class="
+                                w-full h-2 bg-gray-300 appearance-none rounded-none 
+                                [&::-webkit-slider-thumb]:appearance-none 
+                                [&::-webkit-slider-thumb]:w-4 
+                                [&::-webkit-slider-thumb]:h-4 
+                                [&::-webkit-slider-thumb]:bg-gray-600 
+                                [&::-webkit-slider-thumb]:cursor-pointer 
+                                [&::-webkit-slider-thumb]:rounded-none
+                                [&::-moz-range-thumb]:w-4 
+                                [&::-moz-range-thumb]:h-4 
+                                [&::-moz-range-thumb]:bg-gray-700 
+                                [&::-moz-range-thumb]:cursor-pointer 
+                                [&::-moz-range-thumb]:rounded-none"
+                            >
+                            <div class="flex justify-between text-sm text-gray-600">
+                                <span>$0</span>
+                                <span>$5000</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-bold mb-2">Durations:</h3>
+                            <div class="grid grid-cols-2 gap-2 space-y-2">
+                                <label class="flex items-center space-x-2">
+                                    <input type="checkbox" class="rounded">
+                                    <span>1 Week</span>
+                                </label>
+                                <label class="flex items-center space-x-2">
+                                    <input type="checkbox" class="rounded">
+                                    <span>10 Days</span>
+                                </label>
+                                <label class="flex items-center space-x-2">
+                                    <input type="checkbox" class="rounded">
+                                    <span>15 Days</span>
+                                </label>
+                                <label class="flex items-center space-x-2">
+                                    <input type="checkbox" class="rounded">
+                                    <span>5 Days</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-bold mb-2">Difficulty:</h3>
+                            <div class="grid grid-cols-2 gap-2 space-y-2">
+                                <label class="flex items-center space-x-2">
+                                    <input type="checkbox" class="rounded">
+                                    <span>Challenging</span>
+                                </label>
+                                <label class="flex items-center space-x-2">
+                                    <input type="checkbox" class="rounded">
+                                    <span>Difficult</span>
+                                </label>
+                                <label class="flex items-center space-x-2">
+                                    <input type="checkbox" class="rounded">
+                                    <span>Easy</span>
+                                </label>
+                                <label class="flex items-center space-x-2">
+                                    <input type="checkbox" class="rounded">
+                                    <span>Medium</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-bold mb-2">Min Age:</h3>
+                            <div class="grid grid-cols-2 gap-2 space-y-2">
+                                <label class="flex items-center space-x-2">
+                                    <input type="checkbox" class="rounded">
+                                    <span>0</span>
+                                </label>
+                                <label class="flex items-center space-x-2">
+                                    <input type="checkbox" class="rounded">
+                                    <span>16</span>
+                                </label>
+                                <label class="flex items-center space-x-2">
+                                    <input type="checkbox" class="rounded">
+                                    <span>18</span>
+                                </label>
+                                <label class="flex items-center space-x-2">
+                                    <input type="checkbox" class="rounded">
+                                    <span>5</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-3/4">
+                    <div class="grid md:grid-cols-2 w-2xl gap-10">
+                        <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                            <img 
+                                src="./images/image4.jpg"
+                                alt="Chiang Mai bamboo forest"
+                                class="w-full h-48 object-cover"
+                            >
+                            <div class="p-6">
+                                <div class="flex items-center gap-4 mb-4">
+                                    <div class="flex items-center gap-2">
+                                        <svg class="w-4 h-4 text-[#5D5FEF]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <circle cx="12" cy="12" r="10"/>
+                                            <path d="M12 6v6l4 2"/>
+                                        </svg>
+                                        <span class="text-sm">1 Week</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <svg class="w-4 h-4 text-[#5D5FEF]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                            <circle cx="12" cy="10" r="3"/>
+                                        </svg>
+                                        <span class="text-sm">Thailand</span>
+                                    </div>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-2">Chiang Mai</h3>
+                                <p class="text-gray-600 text-sm mb-4">
+                                    Visit the temples and the Chiang Mai Night Bazaar, a huge market located on
+                                    Chiang Klan Road.
+                                </p>
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <span class="text-sm text-gray-500">From</span>
+                                        <p class="text-2xl font-bold">$ 490</p>
+                                    </div>
+                                    <button class="px-4 py-2 bg-[#5D5FEF] text-white rounded-md hover:bg-indigo-700 transition">
+                                        Details
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                            <div class="relative">
+                                <div class="absolute top-2 right-2 z-10 bg-[#14B9D5] text-white text-xs px-4 py-1 rounded-xl">
+                                    SALE
+                                </div>
+                                <img 
+                                    src="./images/image5.jpg"
+                                    alt="Chao Phraya beach"
+                                    class="w-full h-48 object-cover"
+                                >
+                            </div>
+                            <div class="p-6">
+                                <div class="flex items-center gap-4 mb-4">
+                                    <div class="flex items-center gap-2">
+                                        <svg class="w-4 h-4 text-[#14B9D5]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <circle cx="12" cy="12" r="10"/>
+                                            <path d="M12 6v6l4 2"/>
+                                        </svg>
+                                        <span class="text-sm">5 Days</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <svg class="w-4 h-4 text-[#14B9D5]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                            <circle cx="12" cy="10" r="3"/>
+                                        </svg>
+                                        <span class="text-sm">Thailand</span>
+                                    </div>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-2">Chao Phraya</h3>
+                                <p class="text-gray-600 text-sm mb-4">
+                                    Boat tour in the capital of Thailand, Bangkok, to see the beautiful palaces and
+                                    monuments from the water.
+                                </p>
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <span class="text-sm text-gray-500">From</span>
+                                        <div class="flex items-center gap-2">
+                                            <p class="text-2xl font-bold">$ 98</p>
+                                            <span class="text-sm text-gray-500 line-through">$134</span>
+                                        </div>
+                                    </div>
+                                    <button class="px-4 py-2 bg-[#14B9D5] text-white rounded-md hover:bg-[#4c9dac] transition">
+                                        Details
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                            <div class="relative">
+                                <div class="absolute top-2 right-2 z-10 bg-[#BA71DA] text-white text-xs px-4 py-1 rounded-xl"">
+                                    SALE
+                                </div>
+                                <img 
+                                    src="./images/image6.jpg"
+                                    alt="Bangkok cityscape"
+                                    class="w-full h-48 object-cover"
+                                >
+                            </div>
+                            <div class="p-6">
+                                <div class="flex items-center gap-4 mb-4">
+                                    <div class="flex items-center gap-2">
+                                        <svg class="w-4 h-4 text-[#BA71DA]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <circle cx="12" cy="12" r="10"/>
+                                            <path d="M12 6v6l4 2"/>
+                                        </svg>
+                                        <span class="text-sm">10 Days</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <svg class="w-4 h-4 text-[#BA71DA]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                            <circle cx="12" cy="10" r="3"/>
+                                        </svg>
+                                        <span class="text-sm">Thailand</span>
+                                    </div>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-2">Bangkok</h3>
+                                <p class="text-gray-600 text-sm mb-4">
+                                    Marvelous culinary and cultural trip to the Thai capital with its wonderful monuments
+                                    and Buddha statues.
+                                </p>
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <span class="text-sm text-gray-500">From</span>
+                                        <div class="flex items-center gap-2">
+                                            <p class="text-2xl font-bold">$ 1000</p>
+                                            <span class="text-sm text-gray-500 line-through">$1023</span>
+                                        </div>
+                                    </div>
+                                    <button class="px-4 py-2 bg-[#BA71DA] text-white rounded-md hover:bg-purple-600 transition">
+                                        Details
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                            <div class="relative">
+                                <div class="absolute top-2 right-2 z-10 bg-[#F76570] text-white text-xs px-4 py-1 rounded-xl">
+                                    SALE
+                                </div>
+                                <img 
+                                    src="./images/image21.jpg"
+                                    alt="Nara pagoda"
+                                    class="w-full h-48 object-cover"
+                                >
+                            </div>
+                            <div class="p-6">
+                                <div class="flex items-center gap-4 mb-4">
+                                    <div class="flex items-center gap-2">
+                                        <svg class="w-4 h-4 text-[#F76570]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <circle cx="12" cy="12" r="10"/>
+                                            <path d="M12 6v6l4 2"/>
+                                        </svg>
+                                        <span class="text-sm">12 Days</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <svg class="w-4 h-4 text-[#F76570]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                            <circle cx="12" cy="10" r="3"/>
+                                        </svg>
+                                        <span class="text-sm">Japan</span>
+                                    </div>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-2">Nara</h3>
+                                <p class="text-gray-600 text-sm mb-4">
+                                    Discover the incredible landmarks such as Todaiji Temple with its famous Great
+                                    Buddha statue.
+                                </p>
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <span class="text-sm text-gray-500">From</span>
+                                        <div class="flex items-center gap-2">
+                                            <p class="text-2xl font-bold">$ 890</p>
+                                            <span class="text-sm text-gray-500 line-through">$950</span>
+                                        </div>
+                                    </div>
+                                    <button class="px-4 py-2 bg-[#F76570] text-white rounded-md hover:bg-pink-600 transition">
+                                        Details
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-full flex justify-center gap-2 mt-8">
+                            <button class="w-6 h-6 rounded text-white bg-[#5D5FEF]">1</button>
+                            <button class="w-6 h-6 rounded text-white bg-[#434A54]">2</button>
+                            <button class="w-6 h-6 rounded text-white bg-[#434A54]">3</button>
+                            <button class="w-6 h-6 rounded text-white bg-[#434A54]">4</button>
+                            <button class="w-6 h-6 rounded text-white bg-[#434A54]">5</button>
+                            <button class="w-6 h-6 rounded text-white bg-[#434A54]">6</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="flex relative min-h-[400px] w-full bg-cover bg-center bg-no-repeat text-white mt-8 items-center justify-center" style="background-image: url('./images/footer-img.jpg');">
+        <div class="absolute inset-0 bg-black/60"></div>
+        <div class="relative z-10 container mx-auto mt-16 px-4 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h2 class="text-5xl w-xl font-bold leading-tight mb-8">
+                        Travel beyond your imagination, with our Travel Agency!
+                    </h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">Address</h3>
+                        <address class="not-italic">
+                            <p>1080 Brickell Ave</p>
+                            <p>Miami - Florida</p>
+                            <p class="mb-4">U.S. of America</p>
+                        </address>
+                        <div class="flex gap-4">
+                            <a href="#" class="hover:text-blue-400 transition-colors">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="hover:text-blue-400 transition-colors">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="hover:text-red-500 transition-colors">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">Contact</h3>
+                        <a href="mailto:info@travel.com" 
+                            class="inline-block px-6 py-2 bg-[#1BBC9B] hover:bg-[#5dd1d1] transition-colors rounded-lg mb-4">
+                            info@travel.com
+                        </a>
+                        <p class="text-xl font-semibold">+ 01 483 593 284</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
