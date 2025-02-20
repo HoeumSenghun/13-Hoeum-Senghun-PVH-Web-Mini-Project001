@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mini Project</title>
+  <title>Home</title>
   <link rel="stylesheet" href="./styles/output.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,7 +26,7 @@
               </div>
               <!-- nav -->
               <div class="hidden md:flex items-center space-x-8">
-                  <a href="#" class="text-gray-500 hover:text-indigo-600">Home</a>
+                  <a href="./index.html" class="text-gray-500 hover:text-indigo-600">Home</a>
                   <a href="#" class="text-gray-500 hover:text-indigo-600">Travel</a>
                   <a href="#" class="text-gray-500 hover:text-indigo-600">Pages</a>
                   <a href="#" class="text-gray-500 hover:text-indigo-600">Shop</a>
@@ -42,10 +42,10 @@
                       </svg>
                   </button>
                   
-                  <!-- button search -->
-                  <button class="hidden md:flex px-6 py-2.5 bg-[#5D5FEF] text-white rounded hover:bg-indigo-600 transition-colors">
+                  <!-- search -->
+                  <a href="./search.html" class="hidden md:flex px-6 py-2.5 bg-[#5D5FEF] text-white rounded hover:bg-indigo-600 transition-colors">
                       Search
-                  </button>
+                  </a>
               </div>
           </div>
       </div>
@@ -63,7 +63,7 @@
     </nav>
   </header>
   <!-- section1 -->
-  <section class="relative w-full h-[1150px] bg-[#F2F2F2]">
+  <section class="relative w-full h-[1105px] bg-[#F2F2F2]">
     <div class="absolute w-full">
         <img class="opacity-10 bg-cover bg-center" src="./images/world-map.png" alt="">
     </div>
@@ -81,7 +81,7 @@
         </div>
         <div class="mt-10 bg-white shadow-lg rounded-2xl flex items-center p-5 w-full max-w-4xl">
         
-            <!-- Search Input -->
+            <!-- Search-->
             <div class="flex items-center space-x-3 px-5 border-r">
                 <span class="text-[#14B9D5] text-xl"><i class="fa-solid fa-magnifying-glass"></i>
                   </span>
@@ -122,11 +122,13 @@
   <section class="min-h-screen bg-white">
     <div class="relative px-4 py-16 sm:px-6 lg:px-8">
         <div class="absolute inset-0 overflow-hidden">
-            <div class="absolute inset-0 bg-gradient-to-r from-white to-transparent z-10"></div>
-            <img src="./images/world-map.png" alt="World map background" class="absolute inset-0 w-full h-full object-right-bottom opacity-10">
+            <div class="absolute w-3xl inset-0 bg-gradient-to-r from-white to-transparent z-10">
+            <img src="./images/world-map.png" alt="World map background" class="absolute top-1  inset-0 w-full h-full object-right-bottom opacity-20">
+            </div>
         </div>
         <div class="relative z-20 max-w-7xl mx-auto">
             <div class="max-w-2xl">
+                <a class="text-[#5D5FEF] mb-4 " style="font-family: Reenie Beanie; font-size: 25px;" href="#">Dream Vacation Distination</a>
                 <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
                     Plan the Trip of a Lifetime with Ease
                 </h1>
@@ -135,13 +137,13 @@
                     solo journey to explore the world, a travel agency can provide you with a
                     custom-tailored itinerary that exceeds your expectations.
                 </p>
-                <button class="mt-8 bg-indigo-600 text-white px-6 py-2 rounded-md hover:bg-indigo-700 transition-colors">
+                <button class="mt-8 bg-[#5D5FEF] text-white px-6 py-2 rounded-md hover:bg-indigo-600 transition-colors">
                     More Info
                 </button>
             </div>
         </div>
     </div>
-
+    
     <!-- Feature Cards -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -268,6 +270,7 @@
         </div>
     </div>
   </section>
+  
   <!-- section3 -->
   <section class="min-h-[500px] bg-gray-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -855,56 +858,47 @@
     </div>
   </section>
 
-  <footer class="flex relative min-h-[400px] w-full bg-cover bg-center bg-no-repeat text-white mt-8 items-center justify-center" 
-        style="background-image: url('./images/footer-img.jpg');">
-
-        <div class="absolute inset-0 bg-black/60"></div>
-        
-
-        <div class="relative z-10 container mx-auto mt-16 px-4 py-16">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-
+  <footer class="flex relative min-h-[400px] w-full bg-cover bg-center bg-no-repeat text-white mt-8 items-center justify-center" style="background-image: url('./images/footer-img.jpg');">
+    <div class="absolute inset-0 bg-black/60"></div>
+    <div class="relative z-10 container mx-auto mt-16 px-4 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+                <h2 class="text-5xl w-xl font-bold leading-tight mb-8">
+                    Travel beyond your imagination, with our Travel Agency!
+                </h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
-                    <h2 class="text-5xl w-xl font-bold leading-tight mb-8">
-                        Travel beyond your imagination, with our Travel Agency!
-                    </h2>
-                </div>
-                
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-
-                    <div>
-                        <h3 class="text-xl font-semibold mb-4">Address</h3>
-                        <address class="not-italic">
-                            <p>1080 Brickell Ave</p>
-                            <p>Miami - Florida</p>
-                            <p class="mb-4">U.S. of America</p>
-                        </address>
-                        <div class="flex gap-4">
-                            <a href="#" class="hover:text-blue-400 transition-colors">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="#" class="hover:text-blue-400 transition-colors">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="#" class="hover:text-red-500 transition-colors">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div>
-                        <h3 class="text-xl font-semibold mb-4">Contact</h3>
-                        <a href="mailto:info@travel.com" 
-                            class="inline-block px-6 py-2 bg-[#5D5FEF] hover:bg-blue-500 transition-colors rounded-lg mb-4">
-                            info@travel.com
+                    <h3 class="text-xl font-semibold mb-4">Address</h3>
+                    <address class="not-italic">
+                        <p>1080 Brickell Ave</p>
+                        <p>Miami - Florida</p>
+                        <p class="mb-4">U.S. of America</p>
+                    </address>
+                    <div class="flex gap-4">
+                        <a href="#" class="hover:text-blue-400 transition-colors">
+                            <i class="fab fa-facebook-f"></i>
                         </a>
-                        <p class="text-xl font-semibold">+ 01 483 593 284</p>
+                        <a href="#" class="hover:text-blue-400 transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="hover:text-red-500 transition-colors">
+                            <i class="fab fa-youtube"></i>
+                        </a>
                     </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Contact</h3>
+                    <a href="mailto:info@travel.com" 
+                        class="inline-block px-6 py-2 bg-[#5D5FEF] hover:bg-blue-500 transition-colors rounded-lg mb-4">
+                        info@travel.com
+                    </a>
+                    <p class="text-xl font-semibold">+ 01 483 593 284</p>
                 </div>
             </div>
         </div>
-    </footer>
+    </div>
+  </footer>
   <script src="./js/script.js"></script>
 </body>
 </html>
