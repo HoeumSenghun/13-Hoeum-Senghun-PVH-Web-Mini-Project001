@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Single Page</title>
+  <link rel="stylesheet" href="./styles/output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav class="bg-white  w-full w-h-[80px]">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div class="flex justify-between h-20">
+                  <!-- logo -->
+                  <div class="flex items-center w-[24]">
+                      <a href="#" class="flex items-center">
+                          <span class="text-xl font-bold">LOVE</span>
+                          <span class="text-xl font-bold text-emerald-500">TRAVEL</span>
+                          <span class="text-xs text-gray-500 ml-1">TRAVEL AGENCY</span>
+                      </a>
+                      <!-- <img src="./images/logo.png" alt=""> -->
+                  </div>
+                  <!-- nav -->
+                  <div class="hidden md:flex items-center space-x-8">
+                    <a href="./index.html" class="text-gray-500 hover:text-indigo-600">Home</a>
+                    <a href="./search.html" class="text-gray-500 hover:text-indigo-600">Travel</a>
+                    <a href="./singlePage.html" class="text-gray-500 hover:text-indigo-600">Pages</a>
+                    <a href="./search.html" class="text-gray-500 hover:text-indigo-600">Shop</a>
+                    <a href="./destination.html" class="text-gray-500 hover:text-indigo-600">Blog</a>
+                    <a href="./singlePage.html" class="text-gray-500 hover:text-indigo-600">Contact Us</a>
+                  </div>
+                  <div class="flex items-center space-x-4">
+                      <!-- hamberger -->
+                      <button type="button" class=" p-2 rounded-md text-gray-400 hover:text-indigo-600">
+                          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                          </svg>
+                      </button>                  
+                      <!-- search -->
+                      <a href="./search.html" class="hidden md:flex px-6 py-2.5 bg-[#5D5FEF] hover:bg-indigo-600 text-white rounded">
+                          Search
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <!-- mobile screen -->
+          <div class="hidden md:hidden">
+              <div class="px-2 pt-2 pb-3 space-y-1">
+                  <a href="#" class="block px-3 py-2 text-[#5D5FEF] hover:text-gray-500">Home</a>
+                  <a href="#" class="block px-3 py-2 text-[#5D5FEF] hover:text-gray-500">Travel</a>
+                  <a href="#" class="block px-3 py-2 text-[#5D5FEF] hover:text-gray-500">Pages</a>
+                  <a href="#" class="block px-3 py-2 text-[#5D5FEF] hover:text-gray-500">Shop</a>
+                  <a href="#" class="block px-3 py-2 text-[#5D5FEF] hover:text-gray-500">Blog</a>
+                  <a href="#" class="block px-3 py-2 text-[#5D5FEF] hover:text-gray-500">Contact Us</a>
+              </div>
+          </div>
+        </nav>
+    </header>
+
+    <section class="bg-gray-300">
+        <div class="max-w-full mx-auto p-4">
+            <div class="relative overflow-hidden h-[400px] mb-8">
+                <div class="flex transition-transform duration-500 gap-5">
+                    <img src="./images/image12.jpg" alt="Bamboo Forest Path" class="w-1/3 h-[400px] object-cover" />
+                    <img src="./images/image5.jpg" alt="Beach Cove" class="w-1/3 h-[400px] object-cover" />
+                    <img src="./images/image6.jpg" alt="City Skyline" class="w-1/3 h-[400px] object-cover" />
+                </div>
+                <button class="absolute left-4 top-1/2 -translate-y-1/2 text-white hover:bg-white/60 p-2 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                    </svg>
+                </button>
+                <button class="absolute right-4 top-1/2 -translate-y-1/2 text-white hover:bg-white/60 p-2 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg>
+                </button>
+            </div>
+            <div class=" rounded-lg p-6">
+                <div class="flex flex-col md:flex-row md:items-center md:justify-around gap-4">
+                    <div class="space-y-1">
+                        <h2 class="text-2xl font-bold text-gray-900">Chiang Mai</h2>
+                        <div class="flex items-center text-gray-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 mr-1">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                            </svg>
+                            Thailand
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-full bg-violet-100 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-violet-600">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500">Duration</p>
+                                <p class="font-semibold">1 Week</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-full bg-violet-100 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-violet-600">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500">Difficulty</p>
+                                <p class="font-semibold">Easy</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-full bg-violet-100 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-violet-600">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500">Min Age</p>
+                                <p class="font-semibold">0</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-10">
+        <div class="max-w-6xl mx-auto p-4">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-17">
+                <div class="lg:col-span-2 space-y-8">
+                    <section class="border-b-1 text-gray-300 pb-6">
+                        <h2 class="text-4xl text-black font-bold mb-6">Enjoy the Adventure</h2>
+                        <p class="text-gray-600 text-lg leading-relaxed mb-6">
+                            Are you looking for an adventure of a lifetime? Join us on an unforgettable journey through some of the
+                            world's most stunning landscapes and cultural destinations. Our expertly curated tours take you to
+                            incredible destinations, from the rugged mountains of Patagonia to the vibrant cities of Asia. Our
+                            itineraries are designed to immerse you in the local culture, with opportunities to meet locals, try new
+                            foods, and learn about the history and traditions of each destination. Our experienced guides will lead
+                            you through each destination, sharing their knowledge and passion for travel. We offer a range of
+                            activities to suit every traveler, from hiking and kayaking to cultural tours and culinary experiences.
+                        </p>
+                        <p class="text-gray-600 text-lg leading-relaxed">
+                            Our accommodations are carefully selected for comfort and convenience, with options to suit every
+                            budget. Whether you prefer luxurious hotels or cozy homestays, we have something for everyone. At
+                            every step of the journey, we prioritize sustainability and responsible tourism. We work with local
+                            communities to ensure that our tours have a positive impact on the environment and the people we
+                            meet along the way. Join us on a journey of discovery and exploration, and discover the world's most
+                            incredible destinations with us.
+                        </p>
+                    </section>
+                    <section class="border-b-1 text-gray-300 pb-6">
+                        <h2 class="text-4xl text-black font-bold mb-6">Included/Excluded</h2>
+                        <p class="text-gray-600 text-lg mb-6">
+                            To help you plan your trip, we have put together a list of what's included and what's not included in your
+                            tour package. This will give you a clear understanding of what to expect and help you make any
+                            necessary arrangements before your journey begins.
+                        </p>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <ul class="space-y-2">
+                                    <li class="flex items-center text-lg text-gray-600">
+                                        <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        Train tickets and Bus transportation
+                                    </li>
+                                    <li class="flex items-center text-lg text-gray-600">
+                                        <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        Breakfast, lunch, and dinner.
+                                    </li>
+                                    <li class="flex items-center text-lg text-gray-600">
+                                        <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        Accommodation at hotel
+                                    </li>
+                                    <li class="flex items-center text-lg text-gray-600">
+                                        <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        Train tickets and Bus transportation
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul class="space-y-2">
+                                    <li class="flex items-center text-lg text-gray-600">
+                                        <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        Professional tour guide
+                                    </li>
+                                    <li class="flex items-center text-lg text-gray-600">
+                                        <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                        Transfers between destinations
+                                    </li>
+                                    <li class="flex items-center text-lg text-gray-600">
+                                        <svg class="w-5 h-5 text-red-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                        </svg>
+                                        Entrance fees to museums
+                                    </li>
+                                    <li class="flex items-center text-lg text-gray-600">
+                                        <svg class="w-5 h-5 text-red-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                        </svg>
+                                        Custom itinerary
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="border-b-1 text-gray-300 pb-10">
+                        <h2 class="text-black text-4xl font-bold mb-4">Tour Map</h2>
+                        <p class="text-gray-600 text-lg mb-6">
+                            This comprehensive map is designed to guide you through an exciting journey filled with remarkable
+                            destinations and captivating experiences.
+                        </p>
+                        <div class="w-full h-[600px] bg-gray-200 rounded-lg overflow-hidden">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3777.7496549295897!2d98.98903427499179!3d18.788212561345825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30da3a7e90bb6f5d%3A0x98346060a3292170!2sChiang%20Mai!5e0!3m2!1sen!2sth!4v1708517645585!5m2!1sen!2sth"
+                                width="100%" 
+                                height="100%" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade"
+                                class="w-full h-full">
+                            </iframe>
+                        </div>
+                    </section>
+                    <section class="border-b-1 text-gray-300  pb-6">
+                        <h2 class="text-black text-3xl font-bold mb-4">Itinerary</h2>
+                        <p class="text-gray-600 text-lg mb-6">
+                            We have carefully planned out each day to give you the best possible experience. From exploring historic
+                            landmarks to tasting delicious local cuisine, each day is packed with adventure and excitement. Join us
+                            as we take you on a journey through some of the most fascinating destinations in the world.
+                        </p>
+                        <div class="text-black space-y-4">
+                            <div class="border-none rounded-lg">
+                                <button class="w-full px-4 py-3 text-left flex items-center justify-between">
+                                    <span class="font-semibold">Day 1 - Arrival and Orientation</span>
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="border-none rounded-lg">
+                                <button class="w-full px-4 py-3 text-left flex items-center justify-between">
+                                    <span class="font-semibold">Day 2 - City Tour</span>
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="border-none rounded-lg">
+                                <button class="w-full px-4 py-3 text-left flex items-center justify-between">
+                                    <span class="font-semibold">Day 3 - Cooking Class</span>
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="border-none rounded-lg">
+                                <button class="w-full px-4 py-3 text-left flex items-center justify-between">
+                                    <span class="font-semibold">Day 4 - Nature Hike</span>
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="border-none rounded-lg">
+                                <button class="w-full px-4 py-3 text-left flex items-center justify-between">
+                                    <span class="font-semibold">Day 5 - Free Day</span>
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2 class="text-3xl font-bold mb-4">Gallery</h2>
+                        <p class="text-gray-600 text-lg mb-6">
+                            Each image tells a unique story, inviting us into a world of emotion, beauty, and complexity. Get ready to
+                            be moved, inspired, and challenged as we journey through this captivating collection of images.
+                        </p>
+                        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                            <img src="./images/image4.jpg" alt="Gallery 2" class="w-full h-32 object-cover rounded-lg"/>
+                            <img src="./images/image5.jpg" alt="Gallery 2" class="w-full h-32 object-cover rounded-lg"/>
+                            <img src="./images/image6.jpg" alt="Gallery 3" class="w-full h-32 object-cover rounded-lg"/>
+                            <img src="./images/image21.jpg" alt="Gallery 4" class="w-full h-32 object-cover rounded-lg"/>
+                            <img src="./images/image7.jpg" alt="Gallery 5" class="w-full h-32 object-cover rounded-lg"/>
+                            <img src="./images/image8.jpg" alt="Gallery 6" class="w-full h-32 object-cover rounded-lg"/>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- cart -->
+                <div class="max-w-md mx-auto">
+                    <div class="bg-white rounded-2xl p-6 shadow-xl">
+                        <div class="mb-6">
+                            <p class="text-gray-700 text-lg font-medium">Price</p>
+                            <div class="flex items-center justify-between">
+                                <span class="text-2xl font-bold">From</span>
+                                <span class="text-3xl font-bold">$ 490</span>
+                            </div>
+                        </div>
+                        <div class="flex font-semibold text-gray-400 border-b-1 mb-6">
+                            <button class="flex-1 pb-3 text-[#5D5FEF] border-b-1">
+                                Booking Form
+                            </button>
+                            <button class="flex-1 pb-3 text-gray-700">
+                                Enquiry Form
+                            </button>
+                        </div>
+                        <div class="mb-6  border-b-1 text-gray-400">
+                            <label class="block text-2xl text-black font-bold mb-2">Date</label>
+                            <input 
+                                type="text" 
+                                value="03-13-2024" 
+                                class="w-full p-3 border-none rounded-lg text-gray-600"
+                                readonly
+                            />
+                        </div>
+                        <div class="mb-6 border-b-1 text-gray-400">
+                            <div class="flex justify-between mb-2">
+                                <label class="text-black text-2xl font-bold">Adults</label>
+                                <span class="text-sm text-gray-500">Over 18 ( $ 490 )</span>
+                            </div>
+                            <div class="flex items-center border-none rounded-lg">
+                                <button class="px-4 py-3 text-gray-600 hover:text-gray-600">-</button>
+                                <input 
+                                    type="number" 
+                                    value="1" 
+                                    class="flex-1 text-center font-bold p-3"
+                                    readonly
+                                />
+                                <button class="px-4 py-3 text-gray-600 hover:text-gray-600">+</button>
+                            </div>
+                        </div>
+                        <div class="mb-6 border-b-1 text-gray-400">
+                            <div class="flex justify-between mb-2">
+                                <label class="text-2xl text-black font-bold">Children</label>
+                                <span class="text-sm text-gray-500">Under 18 ( $ 200 )</span>
+                            </div>
+                            <div class="flex items-center border-none rounded-lg">
+                                <button class="px-4 py-3 text-gray-600 hover:text-gray-600">-</button>
+                                <input 
+                                    type="number" 
+                                    value="0" 
+                                    class="flex-1 text-center font-bold p-3"
+                                    readonly
+                                />
+                                <button class="px-4 py-3 text-gray-600 hover:text-gray-600">+</button>
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-2xl font-bold mb-2">Extra Services</label>
+                            <p class="text-lg text-black-400 mb-4">Add extra services on your reservation</p>
+                            <div class="space-y-3">
+                                <label class="flex items-center gap-2">
+                                    <input type="checkbox" class="w-4 h-4 rounded border-r border-gray-300 text-indigo-600">
+                                    <span class="text-sm">Health Insurance ( $ 220 )</span>
+                                </label>
+                                <label class="flex items-center gap-2">
+                                    <input type="checkbox" class="w-4 h-4 rounded border-gray-300 text-indigo-600">
+                                    <span class="text-sm">Medical Insurance ( $ 45 )</span>
+                                </label>
+                            </div>
+                        </div>
+                        <button class="w-full bg-[#5D5FEF] text-white py-4 font-semibold rounded-lg hover:bg-[#5d5fefea] transition-colors">
+                            BOOK NOW FOR $ 490
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="min-h-[200px] bg-white mt-3">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="text-center mb-12">
+                <a class="text-[#5D5FEF] mb-2" href="#" style="font-family: Reenie Beanie; font-size: 25px;">Clear All</a>
+                <h1 class="text-4xl font-bold text-gray-900 mb-4">packages</h1>
+            </div>
+        </div>    
+    </section>
+
+    <section class="h-fit bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+            <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg flex flex-col h-[500px]">
+                    <div class="relative h-[220px]">
+                        <img 
+                            src="./images/image22.jpg"
+                            alt="Chiang Mai bamboo forest"
+                            class="w-full h-full object-cover"
+                        >
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="flex items-center gap-2">
+                                <svg class="w-4 h-4 text-[#BA71DA]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 6v6l4 2"/>
+                                </svg>
+                                <span class="text-sm">10 Days</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <svg class="w-4 h-4 text-[#BA71DA]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                                <span class="text-sm">Greece</span>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 border-b-1 border-gray-300 pb-2">Athenes</h3>
+                        <p class="text-gray-600 text-sm mb-4 flex-grow border-b-1 border-gray-300">
+                            Immerse yourself in the history and culture
+                            of this ancient city as you explore the
+                            stunning Acropolis.
+                        </p>
+                        <div class="mt-auto">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <span class="text-sm text-gray-500">From</span>
+                                    <p class="text-2xl font-bold">$ 677</p>
+                                </div>
+                                <a href="./singlePage.html" class="px-4 py-2 bg-[#BA71DA] text-white rounded-md hover:bg-[#ba71dad7] transition">
+                                    Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg flex flex-col h-[500px]">
+                    <div class="relative h-[220px]">
+                        <div class="absolute top-2 right-2 z-10 bg-[#14B9D5] text-white text-xs px-4 py-1 rounded-xl">
+                            SALE
+                        </div>
+                        <img 
+                            src="./images/image10.jpg"
+                            alt="Chao Phraya beach"
+                            class="w-full h-full object-cover"
+                        >
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="flex items-center gap-2">
+                                <svg class="w-4 h-4 text-[#14B9D5]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 6v6l4 2"/>
+                                </svg>
+                                <span class="text-sm">15 Days</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <svg class="w-4 h-4 text-[#14B9D5]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                                <span class="text-sm">France</span>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 border-b-1 border-gray-300 pb-2">Azure Coast</h3>
+                        <p class="text-gray-600 text-sm mb-4 flex-grow border-b-1 border-gray-300">
+                            Escape to the azure coast and discover a
+                            world of breathtaking beauty and
+                            tranquility of coastline.
+                        </p>
+                        <div class="mt-auto">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <span class="text-sm text-gray-500">From</span>
+                                    <div class="flex items-center gap-2">
+                                        <p class="text-2xl font-bold">$ 400</p>
+                                        <span class="text-sm text-gray-500 line-through">$540</span>
+                                    </div>
+                                </div>
+                                <a href="./singlePage.html" class="px-4 py-2 bg-[#14B9D5] text-white rounded-md hover:bg-[#4c9dac] transition">
+                                    Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg flex flex-col h-[500px]">
+                    <div class="relative h-[220px]">
+                        <div class="absolute top-2 right-2 z-10 bg-[#BA71DA] text-white text-xs px-4 py-1 rounded-xl">
+                            SALE
+                        </div>
+                        <img 
+                            src="./images/image14.jpg"
+                            alt="Chao Phraya beach"
+                            class="w-full h-full object-cover"
+                        >
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="flex items-center gap-2">
+                                <svg class="w-4 h-4 text-[#BA71DA]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 6v6l4 2"/>
+                                </svg>
+                                <span class="text-sm">10 Days</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <svg class="w-4 h-4 text-[#BA71DA]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                                <span class="text-sm">Thailand</span>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 border-b-1 border-gray-300 pb-2">Bangkok</h3>
+                        <p class="text-gray-600 text-sm mb-4 flex-grow border-b-1 border-gray-300">
+                            Marvelous culinary and cultural trip to the
+                            Thai capital with its wonderful monuments
+                            and Buddha statues.
+                        </p>
+                        <div class="mt-auto">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <span class="text-sm text-gray-500">From</span>
+                                    <div class="flex items-center gap-2">
+                                        <p class="text-2xl font-bold">$ 1000</p>
+                                        <span class="text-sm text-gray-500 line-through">$1100</span>
+                                    </div>
+                                </div>
+                                <a href="./singlePage.html" class="px-4 py-2 bg-[#BA71DA] text-white rounded-md hover:bg-[#ba71dada] transition">
+                                    Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="flex relative min-h-[400px] w-full bg-cover bg-center bg-no-repeat text-white mt-8 items-center justify-center" style="background-image: url('./images/footer-img.jpg');">
+        <div class="absolute inset-0 bg-black/60"></div>
+        <div class="relative z-10 container mx-auto mt-16 px-4 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h2 class="text-5xl w-xl font-bold leading-tight mb-8">
+                        Travel beyond your imagination, with our Travel Agency!
+                    </h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">Address</h3>
+                        <address class="not-italic">
+                            <p>1080 Brickell Ave</p>
+                            <p>Miami - Florida</p>
+                            <p class="mb-4">U.S. of America</p>
+                        </address>
+                        <div class="flex gap-4">
+                            <a href="#" class="hover:text-blue-400 transition-colors">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="hover:text-blue-400 transition-colors">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="hover:text-red-500 transition-colors">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">Contact</h3>
+                        <a href="mailto:info@travel.com" 
+                            class="inline-block px-6 py-2 bg-[#5D5FEF] hover:bg-blue-500 transition-colors rounded-lg mb-4">
+                            info@travel.com
+                        </a>
+                        <p class="text-xl font-semibold">+ 01 483 593 284</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
