@@ -172,98 +172,156 @@
       </div>
 
       <!-- Destination Cards -->
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
-          <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-              <!-- Chiang Mai Card -->
-              <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
-                  <div class="relative h-64">
-                      <img src="./images/image4.jpg" alt="Chiang Mai" class="w-full h-full object-cover">
-                  </div>
-                  <div class="p-6">
-                      <div class="flex items-center text-sm text-gray-500 mb-4">
-                          <i class="icon-calendar w-4 h-4 mr-2"></i>
-                          <span>1 Week</span>
-                      </div>
-                      <h3 class="text-xl font-semibold mb-1">Chiang Mai</h3>
-                      <div class="flex items-center text-gray-500 mb-4">
-                          <i class="icon-map-pin w-4 h-4 mr-2"></i>
-                          <span>Thailand</span>
-                      </div>
-                      <p class="text-gray-600 mb-6">Visit the temples and the Chiang Mai Night Bazaar, a huge market located on Chiang Klan Road.</p>
-                      <div class="flex items-center justify-between">
-                          <div>
-                              <p class="text-sm text-gray-500">From</p>
-                              <p class="text-2xl font-bold">$490</p>
-                          </div>
-                          <a href="./singlePage.html" class="flex items-center justify-center px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors">
-                              Details
-                              <i class="icon-arrow-right w-4 h-4 ml-2"></i>
-                          </a>
-                      </div>
-                  </div>
-              </div>
-
-              <!-- Chao Phraya Card -->
-              <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
-                  <div class="relative h-64">
-                      <img src="./images/image5.jpg" alt="Chao Phraya" class="w-full h-full object-cover">
-                      <span class="absolute top-4 right-4 bg-purple-500 text-white px-3 py-1 rounded-full text-sm">SALE</span>
-                  </div>
-                  <div class="p-6">
-                      <div class="flex items-center text-sm text-gray-500 mb-4">
-                          <i class="icon-calendar w-4 h-4 mr-2"></i>
-                          <span>5 Days</span>
-                      </div>
-                      <h3 class="text-xl font-semibold mb-1">Chao Phraya</h3>
-                      <div class="flex items-center text-gray-500 mb-4">
-                          <i class="icon-map-pin w-4 h-4 mr-2"></i>
-                          <span>Thailand</span>
-                      </div>
-                      <p class="text-gray-600 mb-6">Boat tour in the capital of Thailand, Bangkok to see the beautiful palaces and monuments from the water.</p>
-                      <div class="flex items-center justify-between">
-                          <div>
-                              <p class="text-sm text-gray-500">From</p>
-                              <p class="text-2xl font-bold">$98 <span class="text-sm text-gray-400 line-through ml-2">$134</span></p>
-                          </div>
-                          <a href="./singlePage.html" class="flex items-center justify-center px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors">
-                              Details
-                              <i class="icon-arrow-right w-4 h-4 ml-2"></i>
-                          </a>
-                      </div>
-                  </div>
-              </div>
-
-              <!-- Bangkok Card -->
-              <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
-                  <div class="relative h-64">
-                      <img src="./images/image6.jpg" alt="Bangkok" class="w-full h-full object-cover">
-                      <span class="absolute top-4 right-4 bg-purple-500 text-white px-3 py-1 rounded-full text-sm">SALE</span>
-                  </div>
-                  <div class="p-6">
-                      <div class="flex items-center text-sm text-gray-500 mb-4">
-                          <i class="icon-calendar w-4 h-4 mr-2"></i>
-                          <span>10 Days</span>
-                      </div>
-                      <h3 class="text-xl font-semibold mb-1">Bangkok</h3>
-                      <div class="flex items-center text-gray-500 mb-4">
-                          <i class="icon-map-pin w-4 h-4 mr-2"></i>
-                          <span>Thailand</span>
-                      </div>
-                      <p class="text-gray-600 mb-6">Marvelous culinary and cultural trip to the Thai capital with its wonderful monuments and Buddha statues.</p>
-                      <div class="flex items-center justify-between">
-                          <div>
-                              <p class="text-sm text-gray-500">From</p>
-                              <p class="text-2xl font-bold">$1000 <span class="text-sm text-gray-400 line-through ml-2">$1023</span></p>
-                          </div>
-                          <a href="./singlePage.html" class="flex items-center justify-center px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors">
-                              Details
-                              <i class="icon-arrow-right w-4 h-4 ml-2"></i>
-                          </a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
+      <section class="h-fit bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+            <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg flex flex-col h-[500px]">
+                    <div class="relative h-[220px]">
+                        <img 
+                            src="./images/image4.jpg"
+                            alt="Chiang Mai bamboo forest"
+                            class="w-full h-full object-cover"
+                        >
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="flex items-center gap-2">
+                                <svg class="w-4 h-4 text-[#5D5FEF]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 6v6l4 2"/>
+                                </svg>
+                                <span class="text-sm">1 Week</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <svg class="w-4 h-4 text-[#5D5FEF]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                                <span class="text-sm">Thailand</span>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 border-b-1 border-gray-300 pb-2">Chiang Mai</h3>
+                        <p class="text-gray-600 text-sm mb-4 flex-grow border-b-1 border-gray-300">
+                            Visit the temples and the Chiang Mai Night
+                            Bazaar, a huge huge market located on
+                            Chiang Klan Road.
+                        </p>
+                        <div class="mt-auto">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <span class="text-sm text-gray-500">From</span>
+                                    <p class="text-2xl font-bold">$ 490</p>
+                                </div>
+                                <a href="./singlePage.html" class="px-4 py-2 bg-[#5D5FEF] text-white rounded-md hover:bg-[#5d5fefce] transition">
+                                    Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg flex flex-col h-[500px]">
+                    <div class="relative h-[220px]">
+                        <div class="absolute top-2 right-2 z-10 bg-[#14B9D5] text-white text-xs px-4 py-1 rounded-xl">
+                            SALE
+                        </div>
+                        <img 
+                            src="./images/image5.jpg"
+                            alt="Chao Phraya beach"
+                            class="w-full h-full object-cover"
+                        >
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="flex items-center gap-2">
+                                <svg class="w-4 h-4 text-[#14B9D5]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 6v6l4 2"/>
+                                </svg>
+                                <span class="text-sm">5 Days</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <svg class="w-4 h-4 text-[#14B9D5]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                                <span class="text-sm">Thailand</span>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 border-b-1 border-gray-300 pb-2">Chao Phraya</h3>
+                        <p class="text-gray-600 text-sm mb-4 flex-grow border-b-1 border-gray-300">
+                            Boat tour in the capital of Thailand, Bangkok,
+                            to see the beautiful palaces and
+                            monuments from the water.
+                        </p>
+                        <div class="mt-auto">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <span class="text-sm text-gray-500">From</span>
+                                    <div class="flex items-center gap-2">
+                                        <p class="text-2xl font-bold">$ 98</p>
+                                        <span class="text-sm text-gray-500 line-through">$134</span>
+                                    </div>
+                                </div>
+                                <a href="./singlePage.html" class="px-4 py-2 bg-[#14B9D5] text-white rounded-md hover:bg-[#4c9dac] transition">
+                                    Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg flex flex-col h-[500px]">
+                    <div class="relative h-[220px]">
+                        <div class="absolute top-2 right-2 z-10 bg-[#BA71DA] text-white text-xs px-4 py-1 rounded-xl">
+                            SALE
+                        </div>
+                        <img 
+                            src="./images/image6.jpg"
+                            alt="Chao Phraya beach"
+                            class="w-full h-full object-cover"
+                        >
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="flex items-center gap-2">
+                                <svg class="w-4 h-4 text-[#BA71DA]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 6v6l4 2"/>
+                                </svg>
+                                <span class="text-sm">10 Days</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <svg class="w-4 h-4 text-[#BA71DA]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                                <span class="text-sm">Thailand</span>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 border-b-1 border-gray-300 pb-2">Bangkok</h3>
+                        <p class="text-gray-600 text-sm mb-4 flex-grow border-b-1 border-gray-300">
+                            Marvelous culinary and cultural trip to the
+                            Thai capital with its wonderful monuments
+                            and Buddha statues.
+                        </p>
+                        <div class="mt-auto">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <span class="text-sm text-gray-500">From</span>
+                                    <div class="flex items-center gap-2">
+                                        <p class="text-2xl font-bold">$ 1000</p>
+                                        <span class="text-sm text-gray-500 line-through">$1023</span>
+                                    </div>
+                                </div>
+                                <a href="./singlePage.html" class="px-4 py-2 bg-[#BA71DA] text-white rounded-md hover:bg-[#ba71dada] transition">
+                                    Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     </section>
   
     <!-- section3 -->

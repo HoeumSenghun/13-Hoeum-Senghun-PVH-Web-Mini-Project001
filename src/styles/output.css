@@ -1753,6 +1753,20 @@
       }
     }
   }
+  .hover\:bg-\[\#5D5FEF\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #5D5FEF;
+      }
+    }
+  }
+  .hover\:bg-\[\#5d5fefce\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #5d5fefce;
+      }
+    }
+  }
   .hover\:bg-\[\#5d5fefd8\] {
     &:hover {
       @media (hover: hover) {
