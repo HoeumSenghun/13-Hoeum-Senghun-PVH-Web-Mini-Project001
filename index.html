@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
-  <link rel="stylesheet" href="./styles/output.css">
+  <link rel="stylesheet" href="./src/styles/output.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
@@ -22,16 +22,16 @@
                         <span class="text-xl font-bold text-emerald-500">TRAVEL</span>
                         <span class="text-xs text-gray-500 ml-1">TRAVEL AGENCY</span>
                     </a>
-                    <!-- <img src="./images/logo.png" alt=""> -->
+                    <!-- <img src="./src/images/logo.png" alt=""> -->
                 </div>
                 <!-- nav -->
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="./index.html" class="text-gray-500 hover:text-indigo-600">Home</a>
-                    <a href="./search.html" class="text-gray-500 hover:text-indigo-600">Travel</a>
-                    <a href="./singlePage.html" class="text-gray-500 hover:text-indigo-600">Pages</a>
-                    <a href="./search.html" class="text-gray-500 hover:text-indigo-600">Shop</a>
-                    <a href="./destination.html" class="text-gray-500 hover:text-indigo-600">Blog</a>
-                    <a href="./singlePage.html" class="text-gray-500 hover:text-indigo-600">Contact Us</a>
+                    <a href="./src/search.html" class="text-gray-500 hover:text-indigo-600">Travel</a>
+                    <a href="./src/singlePage.html" class="text-gray-500 hover:text-indigo-600">Pages</a>
+                    <a href="./src/search.html" class="text-gray-500 hover:text-indigo-600">Shop</a>
+                    <a href="./src/destination.html" class="text-gray-500 hover:text-indigo-600">Blog</a>
+                    <a href="./src/singlePage.html" class="text-gray-500 hover:text-indigo-600">Contact Us</a>
                 </div>
                 <div class="flex items-center space-x-4">
                     <!-- hamberger -->
@@ -41,7 +41,7 @@
                         </svg>
                     </button>                  
                     <!-- search -->
-                    <a href="./search.html" class="hidden md:flex px-6 py-2.5 bg-[#5D5FEF] hover:bg-indigo-600 text-white rounded">
+                    <a href="./src/search.html" class="hidden md:flex px-6 py-2.5 bg-[#5D5FEF] hover:bg-indigo-600 text-white rounded">
                         Search
                     </a>
                 </div>
@@ -50,12 +50,12 @@
         <!-- mobile screen -->
         <div class="hidden md:hidden">
             <div class="px-2 pt-2 pb-3 space-y-1">
-                <a href="#" class="block px-3 py-2 text-[#5D5FEF] hover:text-gray-500">Home</a>
-                <a href="#" class="block px-3 py-2 text-[#5D5FEF] hover:text-gray-500">Travel</a>
-                <a href="#" class="block px-3 py-2 text-[#5D5FEF] hover:text-gray-500">Pages</a>
-                <a href="#" class="block px-3 py-2 text-[#5D5FEF] hover:text-gray-500">Shop</a>
-                <a href="#" class="block px-3 py-2 text-[#5D5FEF] hover:text-gray-500">Blog</a>
-                <a href="#" class="block px-3 py-2 text-[#5D5FEF] hover:text-gray-500">Contact Us</a>
+                <a href="./index.html" class="block px-3 py-2 text-[#5D5FEF] hover:text-gray-500">Home</a>
+                <a href="./src/search.html" class="block px-3 py-2 text-[#5D5FEF] hover:text-gray-500">Travel</a>
+                <a href="./src/singlePage.html" class="block px-3 py-2 text-[#5D5FEF] hover:text-gray-500">Pages</a>
+                <a href="./src/search.html" class="block px-3 py-2 text-[#5D5FEF] hover:text-gray-500">Shop</a>
+                <a href="./src/destination.html" class="block px-3 py-2 text-[#5D5FEF] hover:text-gray-500">Blog</a>
+                <a href="./src/singlePage.html" class="block px-3 py-2 text-[#5D5FEF] hover:text-gray-500">Contact Us</a>
             </div>
         </div>
       </nav>
@@ -64,7 +64,7 @@
     <!-- section1 -->
     <section class="relative w-full h-[940px] bg-[#F2F2F2] mb-15">
       <div class="absolute w-full h-auto">
-        <img class="w-full h-[935px] opacity-10 bg-cover bg-center" src="./images/world-map.png" alt="">
+        <img class="w-full h-[935px] opacity-10 bg-cover bg-center" src="./src/images/world-map.png" alt="">
       </div>
       <div class=" relative w-[1350px] h-[850px] top-[200px] left-[340px] z-10">
           <div class="max-w-3xl">
@@ -106,7 +106,7 @@
                   </div>
               </div>
               <!-- Search Button -->
-              <a href="./search.html" class="ml-auto bg-[#5D5FEF] hover:bg-indigo-600 text-white font-semibold px-6 py-3 rounded">
+              <a href="./src/search.html" class="ml-auto bg-[#5D5FEF] hover:bg-indigo-600 text-white font-semibold px-6 py-3 rounded">
                   SEARCH
               </a>
           </div>
@@ -118,7 +118,7 @@
       <div class="relative px-4 py-16 sm:px-6 lg:px-8">
           <div class="absolute inset-0 overflow-hidden">
               <div class="absolute w-3xl inset-0 bg-gradient-to-r from-white to-transparent z-10">
-              <img src="./images/world-map.png" alt="World map background" class="absolute top-1 left-260 inset-0 w-full h-full object-right-bottom opacity-20">
+              <img src="./src/images/world-map.png" alt="World map background" class="absolute top-1 left-260 inset-0 w-full h-full object-right-bottom opacity-20">
               </div>
           </div>
           <div class="relative z-20 max-w-7xl mx-auto left-[35px]">
@@ -143,7 +143,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
               <div class="relative h-48 rounded-xl overflow-hidden bg-yellow-400">
-                  <img src="./images/image1.png" alt="City tour" class="w-full h-full object-cover">
+                  <img src="./src/images/image1.png" alt="City tour" class="w-full h-full object-cover">
                   <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                   <div class="absolute bottom-4 left-4 text-white">
                       <i class="icon-map-pin w-6 h-6 mb-2"></i>
@@ -152,7 +152,7 @@
               </div>
 
               <div class="relative h-48 rounded-xl overflow-hidden bg-emerald-400">
-                  <img src="./images/image2.jpg" alt="Electric bikes" class="w-full h-full object-cover">
+                  <img src="./src/images/image2.jpg" alt="Electric bikes" class="w-full h-full object-cover">
                   <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                   <div class="absolute bottom-4 left-4 text-white">
                       <i class="icon-map-pin w-6 h-6 mb-2"></i>
@@ -161,7 +161,7 @@
               </div>
 
               <div class="relative h-48 rounded-xl overflow-hidden bg-cyan-400">
-                  <img src="./images/image3.jpg" alt="City view" class="w-full h-full object-cover">
+                  <img src="./src/images/image3.jpg" alt="City view" class="w-full h-full object-cover">
                   <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                   <div class="absolute bottom-4 left-4 text-white">
                       <i class="icon-map-pin w-6 h-6 mb-2"></i>
@@ -178,7 +178,7 @@
                 <div class="bg-white rounded-lg overflow-hidden shadow-lg flex flex-col h-[500px]">
                     <div class="relative h-[220px]">
                         <img 
-                            src="./images/image4.jpg"
+                            src="./src/images/image4.jpg"
                             alt="Chiang Mai bamboo forest"
                             class="w-full h-full object-cover"
                         >
@@ -212,7 +212,7 @@
                                     <span class="text-sm text-gray-500">From</span>
                                     <p class="text-2xl font-bold">$ 490</p>
                                 </div>
-                                <a href="./singlePage.html" class="px-4 py-2 bg-[#5D5FEF] text-white rounded-md hover:bg-[#5d5fefce] transition">
+                                <a href="./src/singlePage.html" class="px-4 py-2 bg-[#5D5FEF] text-white rounded-md hover:bg-[#5d5fefce] transition">
                                     Details
                                 </a>
                             </div>
@@ -225,7 +225,7 @@
                             SALE
                         </div>
                         <img 
-                            src="./images/image5.jpg"
+                            src="./src/images/image5.jpg"
                             alt="Chao Phraya beach"
                             class="w-full h-full object-cover"
                         >
@@ -262,7 +262,7 @@
                                         <span class="text-sm text-gray-500 line-through">$134</span>
                                     </div>
                                 </div>
-                                <a href="./singlePage.html" class="px-4 py-2 bg-[#14B9D5] text-white rounded-md hover:bg-[#4c9dac] transition">
+                                <a href="./src/singlePage.html" class="px-4 py-2 bg-[#14B9D5] text-white rounded-md hover:bg-[#4c9dac] transition">
                                     Details
                                 </a>
                             </div>
@@ -275,7 +275,7 @@
                             SALE
                         </div>
                         <img 
-                            src="./images/image6.jpg"
+                            src="./src/images/image6.jpg"
                             alt="Chao Phraya beach"
                             class="w-full h-full object-cover"
                         >
@@ -312,7 +312,7 @@
                                         <span class="text-sm text-gray-500 line-through">$1023</span>
                                     </div>
                                 </div>
-                                <a href="./singlePage.html" class="px-4 py-2 bg-[#BA71DA] text-white rounded-md hover:bg-[#ba71dada] transition">
+                                <a href="./src/singlePage.html" class="px-4 py-2 bg-[#BA71DA] text-white rounded-md hover:bg-[#ba71dada] transition">
                                     Details
                                 </a>
                             </div>
@@ -376,7 +376,7 @@
                   </div>
 
                   <!-- Search Button -->
-                  <a href="./search.html" class="w-full sm:w-auto px-8 py-4 bg-[#F76570] hover:bg-pink-500 text-white font-medium rounded-md transition-colors">
+                  <a href="./src/search.html" class="w-full sm:w-auto px-8 py-4 bg-[#F76570] hover:bg-pink-500 text-white font-medium rounded-md transition-colors">
                       SEARCH
                   </a>
               </div>
@@ -404,7 +404,7 @@
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               <!-- Greece Card -->
               <div class="relative rounded-2xl overflow-hidden group">
-                  <img src="./images/image7.jpg" 
+                  <img src="./src/images/image7.jpg" 
                       alt="Greece" 
                       class="w-full h-95 object-cover">
                   <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-black/0"></div>
@@ -416,7 +416,7 @@
 
               <!-- Paris Card -->
               <div class="relative rounded-2xl overflow-hidden group">
-                  <img src="./images/image8.jpg" 
+                  <img src="./src/images/image8.jpg" 
                       alt="Paris" 
                       class="w-full h-95 object-cover">
                   <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-black/0"></div>
@@ -428,7 +428,7 @@
 
               <!-- Africa Card -->
               <div class="relative rounded-2xl overflow-hidden group">
-                  <img src="./images/image9.jpg" 
+                  <img src="./src/images/image9.jpg" 
                       alt="Africa" 
                       class="w-full h-95 object-cover">
                   <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-black/0"></div>
@@ -440,7 +440,7 @@
 
               <!-- Thailand Card -->
               <div class="relative rounded-2xl overflow-hidden group">
-                  <img src="./images/image10.jpg" 
+                  <img src="./src/images/image10.jpg" 
                       alt="Thailand" 
                       class="w-full h-95 object-cover">
                   <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-black/0"></div>
@@ -453,13 +453,13 @@
     </section>
 
     <!-- section5 -->
-    <section style="background-image: url('./images/image11.jpg');" class="relative w-full h-[740px] bg-cover bg-center">
+    <section style="background-image: url('./src/images/image11.jpg');" class="relative w-full h-[740px] bg-cover bg-center">
 
       <div class="absolute inset-0 bg-gradient-to-l from-gray-800 via-gray/60 to-transparent"></div>
 
       <div class="relative flex w-full h-full px-10">
           <div class="flex justify-center items-center w-1/2">
-              <img class="w-[510px] h-[500px] shadow-lg rounded-md" src="./images/image12.jpg" alt="">
+              <img class="w-[510px] h-[500px] shadow-lg rounded-md" src="./src/images/image12.jpg" alt="">
           </div>
 
           <div class="w-1/2 flex flex-col justify-center text-white space-y-4">
@@ -486,7 +486,7 @@
               </ul>
 
               <div>
-                  <a href="./search.html" class="inline-block font-semibold bg-[#5D5FEF] hover:bg-blue-500 text-white px-6 py-3 rounded-md mt-4">
+                  <a href="./src/search.html" class="inline-block font-semibold bg-[#5D5FEF] hover:bg-blue-500 text-white px-6 py-3 rounded-md mt-4">
                       All Services
                   </a>
               </div>
@@ -508,35 +508,35 @@
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center max-w-5xl mx-auto">
         <div class="flex justify-center">
           <img 
-            src="./images/img-logo1.png" 
+            src="./src/images/img-logo1.png" 
             alt="Blissful Logo" 
             class="h-12 object-contain grayscale hover:grayscale-0 transition-all duration-300"
           >
         </div>
         <div class="flex justify-center">
           <img 
-            src="./images/img-logo2.png" 
+            src="./src/images/img-logo2.png" 
             alt="Yacht Club Logo" 
             class="h-12 object-contain grayscale hover:grayscale-0 transition-all duration-300"
           >
         </div>
         <div class="flex justify-center">
           <img 
-            src="./images/img-logo3.png" 
+            src="./src/images/img-logo3.png" 
             alt="Traveling Logo" 
             class="h-12 object-contain grayscale hover:grayscale-0 transition-all duration-300"
           >
         </div>
         <div class="flex justify-center">
           <img 
-            src="./images/img-logo4.png" 
+            src="./src/images/img-logo4.png" 
             alt="Biking Logo" 
             class="h-12 object-contain grayscale hover:grayscale-0 transition-all duration-300"
           >
         </div>
         <div class="flex justify-center">
           <img 
-            src="./images/img-logo5.png" 
+            src="./src/images/img-logo5.png" 
             alt="Travel World Logo" 
             class="h-12 object-contain grayscale hover:grayscale-0 transition-all duration-300"
           >
@@ -545,7 +545,7 @@
     </section>
 
     <!-- section7 -->
-    <section class="relative min-h-screen w-full bg-cover bg-center bg-no-repeat py-20" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/image14.jpg');">
+    <section class="relative min-h-screen w-full bg-cover bg-center bg-no-repeat py-20" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./src/images/image14.jpg');">
       <div class="container mx-auto px-4 mt-20 mr-10">
         <div class="max-w-2xl mb-20">
           <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
@@ -564,7 +564,7 @@
             <div class="flex items-center">
               <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
                 <img 
-                  src="./images/Jennifer.jpg" 
+                  src="./src/images/Jennifer.jpg" 
                   alt="Jennifer" 
                   class="w-full h-full object-cover"
                 >
@@ -583,7 +583,7 @@
             <div class="flex items-center">
               <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
                 <img 
-                  src="./images/dylan.jpg" 
+                  src="./src/images/dylan.jpg" 
                   alt="Dylan" 
                   class="w-full h-full object-cover"
                 >
@@ -785,7 +785,7 @@
             </div>
     </div>
     <div class="flex w-1/2">
-        <img class="w-full h-full rounded-bl-full rounded-tl-full pr-30" src="./images/image15.jpg" alt="">
+        <img class="w-full h-full rounded-bl-full rounded-tl-full pr-30" src="./src/images/image15.jpg" alt="">
     </div>
     </section>
 
@@ -810,7 +810,7 @@
         <div class="lg:col-span-2">
           <div class="overflow-hidden bg-white">
             <img 
-              src="./images/image16.jpg" 
+              src="./src/images/image16.jpg" 
               alt="Santorini at sunset with illuminated white buildings"
               class="w-[600px] h-[400px] rounded-3xl object-cover"
             />
@@ -822,7 +822,7 @@
               <p class="w-[600px] text-gray-600 mb-6">
                 Planning a vacation can be overwhelming, but this post offers a step-by-step guide to help readers create a comprehensive travel itinerary. From choosing a destination to booking accommodations and activities, readers will learn how to plan a stress-free and enjoyable trip.
               </p>
-              <a href="./singlePage.html" class="px-4 py-2 bg-[#5D5FEF] font-bold text-white rounded hover:bg-blue-500  transition-colors">
+              <a href="./src/singlePage.html" class="px-4 py-2 bg-[#5D5FEF] font-bold text-white rounded hover:bg-blue-500  transition-colors">
                 Read More
               </a>
             </div>
@@ -834,7 +834,7 @@
         <article class="flex bg-white overflow-hidden transition-shadow duration-300">
           <div class="w-[40]% h-[120px]">
             <img 
-              src="./images/image17.jpg" 
+              src="./src/images/image17.jpg" 
               alt="Aerial view of Central Park in New York City" 
               class="w-full h-full  rounded-xl object-cover"
             >
@@ -855,7 +855,7 @@
         <article class="flex bg-white overflow-hidden transition-shadow duration-300">
           <div class="w-[40]% h-[120px]">
             <img 
-              src="./images/image18.jpg" 
+              src="./src/images/image18.jpg" 
               alt="Aerial view of Central Park in New York City" 
               class="w-full h-full  rounded-xl object-cover"
             >
@@ -876,7 +876,7 @@
         <article class="flex bg-white overflow-hidden transition-shadow duration-300">
           <div class="w-[40]% h-[120px]">
             <img 
-              src="./images/image19.jpg" 
+              src="./src/images/image19.jpg" 
               alt="Aerial view of Central Park in New York City" 
               class="w-full h-full  rounded-xl object-cover"
             >
@@ -897,7 +897,7 @@
         <article class="flex bg-white overflow-hidden transition-shadow duration-300">
           <div class="w-[40]% h-[120px]">
             <img 
-              src="./images/image20.jpg" 
+              src="./src/images/image20.jpg" 
               alt="Aerial view of Central Park in New York City" 
               class="w-full h-full  rounded-xl object-cover"
             >
@@ -917,7 +917,7 @@
       </div>
     </section>
 
-    <footer class="flex relative min-h-[400px] w-full bg-cover bg-center bg-no-repeat text-white mt-8 items-center justify-center" style="background-image: url('./images/footer-img.jpg');">
+    <footer class="flex relative min-h-[400px] w-full bg-cover bg-center bg-no-repeat text-white mt-8 items-center justify-center" style="background-image: url('./src/images/footer-img.jpg');">
       <div class="absolute inset-0 bg-black/60"></div>
       <div class="relative z-10 container mx-auto mt-16 px-4 py-16">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
@@ -958,6 +958,6 @@
           </div>
       </div>
     </footer>
-    <script src="./js/script.js"></script>
+    <script src="./src/js/script.js"></script>
 </body>
 </html>

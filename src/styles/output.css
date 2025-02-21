@@ -602,6 +602,9 @@
   .-z-10 {
     z-index: calc(10 * -1);
   }
+  .z-6 {
+    z-index: 6;
+  }
   .z-10 {
     z-index: 10;
   }
@@ -789,9 +792,6 @@
   .h-\[25px\] {
     height: 25px;
   }
-  .h-\[60vh\] {
-    height: 60vh;
-  }
   .h-\[120px\] {
     height: 120px;
   }
@@ -812,6 +812,9 @@
   }
   .h-\[600px\] {
     height: 600px;
+  }
+  .h-\[60vh\] {
+    height: 60vh;
   }
   .h-\[640px\] {
     height: 640px;
@@ -900,14 +903,8 @@
   .w-\[24\] {
     width: 24;
   }
-  .w-\[400px\] {
-    width: 400px;
-  }
   .w-\[40\] {
     width: 40;
-  }
-  .w-\[450px\] {
-    width: 450px;
   }
   .w-\[510px\] {
     width: 510px;
@@ -941,6 +938,12 @@
   }
   .w-\[320px\] {
     width: 320px;
+  }
+  .w-\[400px\] {
+    width: 400px;
+  }
+  .w-\[450px\] {
+    width: 450px;
   }
   .w-\[1350px\] {
     width: 1350px;
@@ -1753,13 +1756,6 @@
       }
     }
   }
-  .hover\:bg-\[\#5D5FEF\] {
-    &:hover {
-      @media (hover: hover) {
-        background-color: #5D5FEF;
-      }
-    }
-  }
   .hover\:bg-\[\#5d5fefce\] {
     &:hover {
       @media (hover: hover) {
@@ -1792,13 +1788,6 @@
     &:hover {
       @media (hover: hover) {
         background-color: #5dd1d1;
-      }
-    }
-  }
-  .hover\:bg-\[\#BA71DA\] {
-    &:hover {
-      @media (hover: hover) {
-        background-color: #BA71DA;
       }
     }
   }
